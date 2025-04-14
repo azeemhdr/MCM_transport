@@ -1,0 +1,136 @@
+:root {
+  --primaryColor: #7aeb3d;
+  --secondaryColor: #eb3d83;
+  --textColor: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--textColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section{
+  padding: 100px 0px 70px;
+}
+
+.top-header-area {
+  background-color: var(--primaryColor);
+}
+
+.top-header-top span i {
+  color: var(--secondaryColor);
+}
+.top-header-social li a i {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  background-color: transparent;
+  border: 1px solid var(--secondaryColor);
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-header-social li a i:hover {
+  background-color: var(--secondaryColor);
+  transform: translateY(-2px);
+}
+.main-navbar {
+  background-color: var(--secondaryColor);
+  color: var(--textColor) !important;
+  font-size: 18px;
+}
+.main-navbar .navbar-nav .nav-item .nav-link {
+  color: var(--textColor) !important;
+  transition: 400ms ease;
+}
+
+.main-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primaryColor) !important;
+}
+
+.primary_btn {
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 35px;
+  position: relative;
+  z-index: 1;
+  color: var(--textColor);
+  background-color: var(--textColor);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.primary_btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color:var(--primaryColor);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.primary_btn:hover::before{
+	transform: scaleX(0);;
+}
+.primary_btn:hover{
+	color: var(--primaryColor);
+}
+
+.hero{
+  background-image: url("../images/MCM\ main\ banner.webp");
+  /* height: 90vh; */
+  /* min-height: 100%; */
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px 0px;
+  z-index: 1;
+}
+.hero::before{
+  content: "";
+  background-color: rgba(14, 13, 13, 0.774);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-wrapper {
+  min-height: auto;
+  height: auto;
+}
+.main-banner-content p{
+  line-height: 1.8;
+}
+.banner-form{
+  background-image: linear-gradient(125deg,#ef126bd4,#6a17cfcf);
+}
+.banner-form h2{
+  font-size: 40px;
+}
+.about-image{
+  background-image: url("../images/about-1.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
