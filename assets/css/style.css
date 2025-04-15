@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: #7aeb3d;
+  --primaryColor: #78be3c;
   --secondaryColor: #53565a;
   --textColor: #fafafa;
   --paraColor: #6b6b84;
@@ -145,11 +145,15 @@ a {
   color: var(--secondaryColor);
 }
 
-.about-item-content h3,
-.about-list li {
+.about-item-content h3 {
   color: var(--primaryColor);
-  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.about-list li{
   display: flex;
+  margin-bottom: 20px;
+  color: var(--primaryColor);
 }
 
 .about-list li i {
@@ -167,6 +171,38 @@ a {
   margin-right: 10px;
   transition: 0.5s;
 }
+.about-list li i:hover{
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
 .about-item-content p{
   color: var(--paraColor);
+}
+
+.about-counter{
+  padding: 50px 30px 30px;
+  margin-top: 30px;
+}
+
+.about-counter h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+.counter-wrapper{
+  position: relative;
+}
+.counter-wrapper::before{
+  content: '';
+position: absolute;
+background-color: var(--secondaryColor);
+height: 100%;
+width: 1px;
+top: 0;
+right: -12px;
+}
+
+.last-count::before {
+  display: none;
 }
