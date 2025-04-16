@@ -21,11 +21,11 @@ p {
 a {
   text-decoration: none;
 }
-h3{
-color: var(--primaryColor);
-font-size: 44px;
-font-weight: 600;
-margin: 12px 0px 14px;
+h3 {
+  color: var(--primaryColor);
+  font-size: 44px;
+  font-weight: 600;
+  margin: 12px 0px 14px;
 }
 
 .section {
@@ -157,7 +157,7 @@ margin: 12px 0px 14px;
   font-size: 40px;
 }
 
-.about-list li{
+.about-list li {
   display: flex;
   margin-bottom: 20px;
   color: var(--primaryColor);
@@ -178,54 +178,90 @@ margin: 12px 0px 14px;
   margin-right: 10px;
   transition: 0.5s;
 }
-.about-list li i:hover{
+.about-list li i:hover {
   background-color: var(--secondaryColor);
   color: var(--primaryColor);
 }
-.about-item-content p{
+.about-item-content p {
   color: var(--paraColor);
 }
 
-.about-counter{
+.about-counter {
   padding: 50px 30px 30px;
   margin-top: 30px;
 }
 
-.about-counter h3{
+.about-counter h3 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 0;
   text-align: center;
 }
-.counter-wrapper{
+.counter-wrapper {
   position: relative;
 }
-.counter-wrapper::before{
-  content: '';
-position: absolute;
-background-color: var(--secondaryColor);
-height: 100%;
-width: 1px;
-top: 0;
-right: -12px;
+.counter-wrapper::before {
+  content: "";
+  position: absolute;
+  background-color: var(--secondaryColor);
+  height: 100%;
+  width: 1px;
+  top: 0;
+  right: -12px;
 }
 
 .last-count::before {
   display: none;
 }
 
-.title_heading{
+.title_heading {
   text-align: center;
   max-width: 680px;
   margin: auto;
 }
 
-.title_heading span{
+.title_heading span {
   color: var(--secondaryColor);
   font-weight: bold;
   font-size: 18px;
 }
 
-.title_heading p{
+.title_heading p {
   color: var(--paraColor);
+}
+
+.service-content{
+  position: relative;
+  z-index: 1;
+}
+
+.service-item .service-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: var(--primaryColor);
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 0 0 5px 5px;
+}
+.service-content h3 a{
+  color: var(--primaryColor);
+  font-size: 28px;
+}
+
+.service-content a{
+  color: var(--primaryColor);
+}
+.service-item:hover .service-content::before, .service-item:hover .service-content a,.service-item:hover .service-content p{
+  height: 100%;
+  color: var(--textColor);
+}
+
+.service-item:hover .image  img{
+  transform: scale(1.2) rotate(2deg);
+  transition: .3s ease-in-out
+;
 }
