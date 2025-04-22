@@ -136,7 +136,9 @@ h3 {
   line-height: 1.8;
 }
 .banner-form {
-  background-image: linear-gradient(125deg, #ef126bd4, #6a17cfcf);
+  /* background-image: linear-gradient(125deg, #ef126bd4, #6a17cfcf); */
+  background: #53565a9c;
+  border: 1px solid var(--textColor);
 }
 .banner-form h2 {
   font-size: 40px;
@@ -264,4 +266,19 @@ h3 {
   transform: scale(1.2) rotate(2deg);
   transition: .3s ease-in-out
 ;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: var(--primaryColor);
+  font-size: 28px!important;
+}
+
+.swiper-button-prev,.swiper-button-next{
+background-color: var(--textColor);
+width:calc(var(--swiper-navigation-size)/ 44 * 44)!important;
+border-radius: 50%;
+}
+
+.work-content{
+  max-width: 650px;
 }
