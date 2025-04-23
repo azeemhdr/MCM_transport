@@ -282,3 +282,43 @@ border-radius: 50%;
 .work-content{
   max-width: 650px;
 }
+
+.work-content h3{
+  font-size: 38px;
+}
+
+.wrok-inner-content{
+  display: flex;
+}
+
+.number span{
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondaryColor);
+}
+
+.work-inner-details h3{
+font-size: 25px;
+}
+.choose-item{
+  background-color: var(--secondaryColor);
+}
+.choose-item::before{
+  background-color: var(--textColor)!important;;
+}
+
+.choose-item:hover{
+  transform: translateY(-8px);
+  transition: 300ms ease-in-out;
+}
+.choose-item .icon i{
+  font-size: 64px;
+  color: var(--primaryColor);
+}
+
+.empty_sec{
+  background-image: url('../images/video-bg.jpg');
+  background-position: top;
+  background-attachment: fixed;
+  height: 500px;
+}
