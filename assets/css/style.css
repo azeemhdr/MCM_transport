@@ -307,9 +307,13 @@ font-size: 25px;
   background-color: var(--textColor)!important;;
 }
 
-.choose-item:hover{
+.choose-item:hover {
   transform: translateY(-8px);
   transition: 300ms ease-in-out;
+}
+.choose-item:hover p{
+  color: var(--textColor);
+
 }
 .choose-item .icon i{
   font-size: 64px;
@@ -321,4 +325,31 @@ font-size: 25px;
   background-position: top;
   background-attachment: fixed;
   height: 500px;
+}
+
+.social-icons{
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -150px;
+  transition: 300ms ease-in;
+}
+
+.social-icons i{
+  background-color: var(--primaryColor);
+  padding:12px ;
+  border-radius: 50%;
+  transition: 300ms ease-in;
+}
+
+.social-icons i:hover{
+  background-color: var(--textColor);
+  color: var(--primaryColor);
+}
+.team-image{
+  transition: 500ms ease-in-out;
+}
+
+.team-image:hover .social-icons{
+bottom: 10px;
 }
