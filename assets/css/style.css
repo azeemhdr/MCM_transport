@@ -399,3 +399,11 @@ bottom: 10px;
 .partner-area{
   padding-bottom: 100px;
 }
+
+.news-letter-btn{
+  background-color: var(--secondaryColor)!important;
+}
+
+.footer{
+  background-color: var(--primaryColor);
+}
