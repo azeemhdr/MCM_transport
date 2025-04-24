@@ -27,6 +27,9 @@ h3 {
   font-weight: 600;
   margin: 12px 0px 14px;
 }
+h4{
+  color: var(--primaryColor);
+}
 
 .section {
   padding: 100px 0px 70px;
@@ -237,6 +240,11 @@ h3 {
   z-index: 1;
 }
 
+.service-content h3{
+  line-height: 60%;
+}
+
+
 .service-item .service-content::before {
   content: "";
   position: absolute;
@@ -251,11 +259,11 @@ h3 {
 }
 .service-content h3 a{
   color: var(--primaryColor);
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .service-content a{
-  color: var(--primaryColor);
+  color: var(--secondaryColor);
 }
 .service-item:hover .service-content::before, .service-item:hover .service-content a,.service-item:hover .service-content p{
   height: 100%;
@@ -352,4 +360,38 @@ font-size: 25px;
 
 .team-image:hover .social-icons{
 bottom: 10px;
+}
+
+.testimonial{
+  background-image: url('../images/testimonial-bg.jpg');
+  height: auto;
+  padding-bottom: 0px;
+}
+
+.testimonial-content-wrapper{
+  border-radius: 0 60px 0 0;
+  background-color: var(--secondaryColor);
+  /* background-image: url(../images/testimonial-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.testimonial-content{
+  padding: 50px 25px 50px 145px;
+}
+
+.testimonial-info img{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.swiper-pagination-bullet{
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--primaryColor);
 }

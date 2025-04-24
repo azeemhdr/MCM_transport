@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".project-slider", {
   // Optional parameters
   loop: true,
   slidesPerView: 4,
@@ -39,3 +39,21 @@ const swiper = new Swiper(".swiper", {
     }
 },
 });
+
+const testimonial = new Swiper(".testimonial-carousel", {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+})
