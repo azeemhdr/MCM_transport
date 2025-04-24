@@ -222,7 +222,7 @@ h4{
 .title_heading {
   text-align: center;
   max-width: 680px;
-  margin: auto;
+  margin: 0 auto 45px;
 }
 
 .title_heading span {
@@ -394,4 +394,8 @@ bottom: 10px;
 
 .swiper-pagination-bullet-active{
   background-color: var(--primaryColor);
+}
+
+.partner-area{
+  padding-bottom: 100px;
 }

@@ -56,4 +56,15 @@ const testimonial = new Swiper(".testimonial-carousel", {
   fadeEffect: {
     crossFade: true,
   },
-})
+});
+
+const partner = new Swiper(".partner-slider", {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+    },
+   
+});
