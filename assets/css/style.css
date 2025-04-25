@@ -445,3 +445,33 @@ bottom: 10px;
 .quick-links a:hover::before{
   width: 90%;
 }
+
+@media screen and (min-width: 360px) and (max-width:768px) {
+  .banner-btn a{
+    padding: 10px;
+  }
+  .title_heading h3{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  .section{
+    padding: 70px 0px 50px;
+  }
+
+  .service-content h3{
+    line-height: 120%;
+  }
+
+  .work-content h3{
+    font-size: 32px;
+  }
+  .testimonial-content{
+    padding: 20px;
+  }
+  .testimonial-info img{
+    width: 80px;
+    height: 80px;
+  }
+}
