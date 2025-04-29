@@ -474,4 +474,7 @@ bottom: 10px;
     width: 80px;
     height: 80px;
   }
+  .news-letter-btn{
+    padding: 10px;
+  }
 }
